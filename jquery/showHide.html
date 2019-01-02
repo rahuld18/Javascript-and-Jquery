@@ -1,0 +1,49 @@
+<html>
+
+<head>
+
+<script src='jquery-2.2.1.min.js'> </script>
+<script>
+$(document).ready( function(){// document is a html page jb voh load ho jae tb function call ho jae
+
+$("#b1").click(function(){
+
+if($(this).html()=="Show") // show string "vohi likhna jo button ka caption ho Show
+{
+$(this).html("Hide");
+$("img").show();
+}
+
+else
+{
+$(this).html("Show");
+$("img").hide();
+}
+});
+
+
+});
+
+</script>
+
+<style>
+img{
+
+display:none;
+
+}
+</style>
+</head>
+
+
+<body>
+
+
+<button id="b1">Show</button><br>
+
+<img src='tick.png' />
+</body>
+
+
+
+</html>

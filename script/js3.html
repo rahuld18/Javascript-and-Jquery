@@ -1,0 +1,22 @@
+<script>
+
+function call()
+{
+t=document.getElementById('t');
+result=document.getElementById('result');
+
+result.innerHTML="<font color='green'  size='5' face='Impact'>"+t.value+"</font>";
+
+}
+</script>
+
+
+<html>
+
+<input type='text' placeholder='type here' id='t'>
+
+<div id='result'>see here...</div>
+
+<input type='button' value='click' onclick="call();">
+
+</html>

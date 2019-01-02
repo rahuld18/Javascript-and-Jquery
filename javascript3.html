@@ -1,0 +1,15 @@
+<script>
+function call()
+{
+txt=document.getElementById('txt');
+result=document.getElementById('result');
+result.innerHTML="<font color='green'  size='5' face='Impact'>"+txt.value+"</font>";
+}
+</script>
+
+<html>
+<input type='text' id='txt' name='tx' placeholder='type here'><br>
+<div id='result'> see here...</div>
+<input type='button' value='click' onclick='call()'>
+
+</html>

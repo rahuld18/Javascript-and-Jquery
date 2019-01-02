@@ -1,0 +1,58 @@
+<script>
+function si()
+{
+rate=document.getElementById('rate');
+
+qty=document.getElementById('qty');
+rater=document.getElementById('rater');
+qtyr=document.getElementById('qtyr');
+amountr=document.getElementById('amountr');
+discountr=document.getElementById('discountr');
+netamountr=document.getElementById('netamountr');
+
+
+amount=rate.value*qty.value;
+rater.innerHTML="Rate:"+rate.value;
+qtyr.innerHTML="Quantity:"+qty.value;
+amountr.innerHTML="<font color='Blue'  size='5' face='Impact'>Amount:"+amount+"</font>";
+
+if(amount>1000)
+{
+netamount=amount-amount*0.2;
+netamountr.innerHTML="Net Amount:"+netamount;
+
+
+discountr.innerHTML="Discount: 20%";
+
+}
+else
+{
+netamount=amount-amount*0.05;
+netamountr.innerHTML="Net Amount:"+netamount;
+discountr.innerHTML="Discount: 5%";
+}
+
+}
+
+</script>
+
+<html>
+<caption> <b>Simple interest</b></caption><br><br>
+<b><i>Rate:</b></i>
+<input type='text' id='rate' placeholder='Enter Rate'><br>
+
+<b><i>Quantity:</b></i>
+<input type='text' id='qty' placeholder='Enter Quantity'><br>
+
+<div id='rater'>See here..</div>
+
+<div id='qtyr'>See here..</div>
+
+<div id='amountr'>See here..</div>
+
+<div id='discountr'>See here..</div>
+
+<div id='netamountr'>See here..</div>
+
+<input type='button' value='Amount' onclick='si()'>
+</html>
